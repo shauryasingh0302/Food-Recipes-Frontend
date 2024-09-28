@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Sharing Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <center><img src="logo.png" alt="The Little Kitchen" class="logo"></center>
+        <h1>The Little Kitchen</h1>
+        <nav>
+            <a href="#discover">Discover Recipes</a>
+            <a href="#meal-planner">Meal Planner</a>
+            <a href="#submit-recipe">Submit a Recipe</a>
+        </nav>
+    </header>
+
+    <section id="discover">
+        <h2>Discover Recipes</h2>
+        <div class="recipe-list" id="recipe-list"></div>
+    </section>
+
+    <section id="meal-planner">
+        <h2>Meal Planner</h2>
+        <form id="meal-planner-form">
+            <label for="meal">Select Meal Type:</label>
+            <select id="meal" name="meal">
+                <option value="breakfast">Breakfast</option>
+                <option value="lunch">Lunch</option>
+                <option value="dinner">Dinner</option>
+            </select>
+
+            <label for="diet">Dietary Restrictions:</label>
+            <select id="diet" name="diet">
+                <option value="none">None</option>
+                <option value="vegetarian">Vegetarian</option>
+                <option value="fastfood">Fast Food</option>
+                <option value="nonveg">Non-Vegetarian</option>
+            </select>
+
+            <button type="submit">Generate Meal Plan</button>
+        </form>
+        <div id="meal-plan-result"></div>
+    </section>
+
+    <section id="submit-recipe">
+        <h2>Submit Your Recipe</h2>
+        <form id="recipe-form">
+            <label for="recipe-name">Recipe Name:</label>
+            <input type="text" id="recipe-name" required>
+
+            <label for="ingredients">Ingredients:</label>
+            <textarea id="ingredients" required></textarea>
+
+            <label for="instructions">Instructions:</label>
+            <textarea id="instructions" required></textarea>
+
+
+            <button type="submit">Submit Recipe</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 The Little Kitchen | Designed by Digital Dreamers</p>
+            <nav>
+                <a href="#">Privacy Policy</a> |
+                <a href="#">Terms of Service</a> |
+                <a href="#">Contact Us</a>
+            </nav>
+        </div>
+    </footer>
+    
+</body>
+</html>
